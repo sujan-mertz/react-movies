@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
-import ReactHeader from '../../components/header';
+import React from 'react';
+import MainLayout from '../../layouts/mainLayout';
 
-class AboutPage extends Component{
-    render(){
-        return(
-            <div>
-                <ReactHeader/>
+const AboutPage = () =>{
+    return(
+        <div>
+            <MainLayout>
                 <h1>About Page</h1>
-            </div>
-        );
-    }
+            </MainLayout>
+        </div>
+    );
 }
 
 export default AboutPage;

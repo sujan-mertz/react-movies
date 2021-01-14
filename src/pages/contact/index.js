@@ -1,26 +1,14 @@
-import React,{Component} from 'react';
+import React from 'react';
 import MainLayout from '../../layouts/mainLayout';
 
-class ContactPage extends Component{
+const ContactPage = () =>{
     
-  constructor(props){
-      super(props);
+   return (
+      <MainLayout>
+         <h1>Contact</h1>
 
-      console.log(props);
-  
-  }
-
-   render(){
-    
-      const {id, name} = this.props.match.params;
-       return (
-            <MainLayout>
-               <h1>Contact</h1>
-
-               <p>Id: {id}</p>
-               {name && <p>Name: {name}</p>}
-            </MainLayout>
-        );
-   }
+         <p>Id: {}</p>
+      </MainLayout>
+   );
 }
 export default ContactPage;

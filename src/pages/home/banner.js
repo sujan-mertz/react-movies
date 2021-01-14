@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
@@ -8,36 +8,30 @@ import Banner3 from '../../assets/images/shaft.jpg';
 import Banner4 from '../../assets/images/yesterday.jpg';
 import { CgChevronDoubleLeft, CgChevronDoubleRight } from 'react-icons/cg';
 
-class Banner extends Component{
-    constructor(props){
-        super(props);
-        this.state={
-            movies:[
-                {
-                    image:Banner1,
-                    name:"Anna",
-                    url:""
-                },
-                {
-                    image:Banner2,
-                    name:"Alita Battle",
-                    url:""
-                },
-                {
-                    image:Banner3,
-                    name:"Shaft",
-                    url:""
-                },
-                {
-                    image:Banner4,
-                    name:"Yesterday",
-                    url:""
-                }
-            ]
+const Banner = () =>{
+    const [movies] = useState([
+        {
+            image:Banner1,
+            name:"Anna",
+            url:""
+        },
+        {
+            image:Banner2,
+            name:"Alita Battle",
+            url:""
+        },
+        {
+            image:Banner3,
+            name:"Shaft",
+            url:""
+        },
+        {
+            image:Banner4,
+            name:"Yesterday",
+            url:""
         }
-    }
-    render(){
-        const {movies} = this.state;
+    ]);
+
         return(
             <div className="c-banner">
                 <CarouselProvider
@@ -67,7 +61,6 @@ class Banner extends Component{
                 </CarouselProvider>   
             </div>
         );
-    }   
 }
 
 export default Banner;
