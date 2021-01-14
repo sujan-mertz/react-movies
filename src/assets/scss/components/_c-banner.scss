@@ -1,0 +1,38 @@
+.c-banner{
+    .carousel{
+
+    }
+    .carousel__next-button,
+    .carousel__back-button{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        border: none;
+        width: auto;
+        padding: 5px 5px;
+        background-color: #fff;
+        cursor: pointer;
+        &:focus,
+        &:active{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    .carousel__next-button{
+        right: 0;
+    }
+    .carousel__back-button{
+        left: 0;
+    }
+    .banner-item{
+        img{
+            height: 60vh;
+            min-height: 400px;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

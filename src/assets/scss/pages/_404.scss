@@ -1,0 +1,16 @@
+.page-error{
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+
+    }
+    h1{
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-size: 50px;
+        color: #f00;
+    }
+}

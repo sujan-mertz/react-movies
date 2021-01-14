@@ -1,0 +1,44 @@
+.page-movie-detail{
+    img{
+        width: 100%;
+    }
+
+    .text{
+        h2{
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #dedede;
+        }
+        .release-date,
+        .rating,
+        .duration{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            font-size: 14px;
+            color: #666;
+            svg{
+                margin-right: 10px;
+            }
+        }
+        .categories{
+            div{
+                font-size: 14px;
+                font-weight: 400;
+                background-color: #f1efef;
+                padding: 5px 15px;
+                display: inline-block;
+                border: 1px solid #dedede;
+                margin-right: 10px;
+            }
+        }
+        .description{
+            padding: 15px 0;
+            color: #999;
+            line-height: 1.6;
+        }
+    }
+}
